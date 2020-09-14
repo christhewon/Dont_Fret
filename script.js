@@ -1,5 +1,3 @@
-print("Hello World")
-
 button = document.getElementById("click")
 button.addEventListener("click", hello)
 
