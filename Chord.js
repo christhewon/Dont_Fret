@@ -1,10 +1,14 @@
 class Chord {
   //constructor
-  constructor(E, A, D, G, B, E) {
+  constructor(TopE, A, D, G, B, LowE) {
     // to indicate which strings are strummed on a guitar
     // 0 is strummed, 1 is not strummed
     // default is all strings are strummed
-    let strum = [0, 0, 0, 0, 0, 0];
+    //let strum = [0, 0, 0, 0, 0, 0];
+
+    // the parameter indicates which strings are strummed or not
+    // and assigned it to this Chord object
+    Object.assign(this, {TopE,A,D,G,B,LowE});
 
     // the finger position of string 1-6 in order
     // 0 indicates no finger is on the string
@@ -13,9 +17,11 @@ class Chord {
   }
 
   // return the array of which strings are strum
+  /*
   get strummed() {
     return this.strum;
   }
+  */
 
   // return the array that shows the finger position
   get position() {
@@ -31,4 +37,4 @@ class Chord {
   addFret(a, b) {
     fret[a - 1] = b;
   }
-}
+};
