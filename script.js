@@ -1,6 +1,7 @@
 const canvas = document.querySelector("canvas");
 const ctx = canvas.getContext("2d");
 ctx.fillStyle = "black";
+//forloop this please
 ctx.fillRect(0, 0, 2000, 5);
 ctx.fillRect(0, 100, 2000, 5);
 ctx.fillRect(0, 0, 5, 100);
