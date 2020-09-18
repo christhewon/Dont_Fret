@@ -13,7 +13,7 @@ class Chord {
     // the finger position of string 1-6 in order
     // 0 indicates no finger is on the string
     //other numbers indicate that there exist a fret position
-    let fret = [0, 0, 0, 0, 0, 0];
+    this.fret = [0, 0, 0, 0, 0, 0];
   }
 
   // return the array of which strings are strum
@@ -38,3 +38,7 @@ class Chord {
     fret[a - 1] = b;
   }
 };
+
+test = new Chord(1,0,0,0,1,0);
+
+console.log(test.fret[1]);
